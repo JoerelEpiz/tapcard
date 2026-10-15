@@ -1,26 +1,34 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* TapCard brand colors */
+@theme {
+  --color-brand: #115E59;
+  --color-brand-dark: #0F4C47;
+  --color-graphite: #17212B;
+  --color-warm-white: #FAFAF7;
+  --color-mint: #D1FAE5;
+  --color-gold: #C5A46D;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Global website appearance */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  margin: 0;
+  background: #FAFAF7;
+  color: #17212B;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Predictable element sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Text selection colors */
+::selection {
+  background-color: #D1FAE5;
+  color: #115E59;
 }
