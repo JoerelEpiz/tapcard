@@ -4,10 +4,10 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navLinks = [
-  { label: "Features", href: "#features" },
-  { label: "Pricing", href: "#plan" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "Features", href: "/#features" },
+  { label: "Pricing", href: "/#plan" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {
@@ -38,12 +38,12 @@ export default function Navbar() {
               </a>
             ))}
 
-            <a
-              href="#plan"
-              className="rounded-full bg-brand px-6 py-2 text-sm font-semibold text-white transition hover:bg-brand-dark"
-            >
-              Get Started
-            </a>
+            <Link
+                href="/auth"
+                className="rounded-full bg-brand px-6 py-2 text-sm font-semibold text-white transition hover:bg-brand-dark"
+              >
+                Get Started
+              </Link>
           </div>
 
           {/* Mobile Hamburger Button */}
@@ -84,13 +84,13 @@ export default function Navbar() {
               ))}
 
               {/* Mobile Get Started */}
-              <a
-                href="#plan"
+              <Link
+                href="/auth"
                 onClick={() => setIsMenuOpen(false)}
                 className="mt-2 block rounded-full bg-brand px-4 py-3 text-center text-sm font-semibold text-white transition hover:bg-brand-dark"
               >
                 Get Started
-              </a>
+              </Link>
             </div>
           )}
         </nav>
