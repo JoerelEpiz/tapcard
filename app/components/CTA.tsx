@@ -29,16 +29,12 @@ export default function CTA() {
             className="inline-flex w-full items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-brand transition hover:bg-mint sm:w-auto"
           >
             Explore NFC Products
-            <span className="ml-2" aria-hidden="true">
-              →
-            </span>
           </a>
-
           <a
-            href="mailto:hello@tapcard.com"
+            href="#plan"
             className="inline-flex w-full items-center justify-center rounded-full border border-white/40 px-8 py-4 text-sm font-semibold text-white transition hover:bg-white/10 sm:w-auto"
           >
-            Contact Us
+            Avail Us
           </a>
         </div>
 
