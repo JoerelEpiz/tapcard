@@ -1,29 +1,31 @@
 import Navbar from "./components/Navbar";
-import CTA from "./components/CTA";
-import Plan from "./components/Plans";
-
+import Hero from "./components/Hero";
+import Feature from "./components/Feature";
+import Pricing from "./components/Pricing";
+import Faq from "./components/Faq";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import BackToTop from "./components/BackToTop";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-warm-white text-graphite">
-      <header className="border-b border-slate-200">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
-          <a href="#" className="text-2xl font-bold tracking-tight">
-            Tap<span className="text-brand">Card</span>
-          </a>
-          <Navbar />
-        </div>
-      </header>
-      <CTA />
-      <Plan />
-      <footer className="bg-graphite px-6 py-8 text-white">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-white/70 sm:flex-row">
-          <p>
-            © 2026 TapCard. All rights reserved.
-          </p>
-          <p>Connecting people, one tap at a time.</p>
-        </div>
-      </footer>
+      {/* Navigation */}
+      <Navbar />
+      {/* Hero Section */}
+      <Hero />
+      {/* Features Section */}
+      <Feature />
+      {/* Pricing Section */}
+      <Pricing />
+      {/* FAQ Section */}
+      <Faq />
+      {/* Contact Section */}
+      <Contact />
+      {/* Footer Section */}
+      <Footer />      
+      {/* Back to Top Section */}
+      <BackToTop />
     </main>
   );
 }
